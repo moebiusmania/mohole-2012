@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=e=>document.querySelector(e),t=e=>document.querySelectorAll(e);document.addEventListener("DOMContentLoaded",(()=>{e("header img").style.top=0,t("#servizi,nav,footer").forEach((e=>e.style.display="block")),e("header .carica").style.display="none"})),t("nav a").forEach((o=>{t(".info").forEach((e=>e.classList.remove("aperto"))),o.addEventListener("click",(t=>{t.preventDefault();const o=t.target.getAttribute("href");e(o).classList.toggle("aperto")}))}))})();
+//# sourceMappingURL=bundle.js.map
