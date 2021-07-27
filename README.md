@@ -1,15 +1,15 @@
-# frontend-starter-kit
+# mohole-2012
 > Simple starter kit boilerplate based on Webpack, SASS and Bootstrap 5 (beta)
 
 ## How to use
 Just clone the project in a new folder:
 ```bash
-git clone https://github.com/mohole/frontend-starter-kit my-new-project
+git clone https://github.com/moebiusmania/mohole-2012
 ```
 
 install dependencies
 ```bash
-cd my-new-project
+cd mohole-2012
 npm install 
 # or "npm i" as shortcut...
 ```
@@ -28,19 +28,5 @@ npm run build
 
 the result will be available in the `./dist` folder.
 
-## Customizations
-To update the page title edit the `displayName` filed in the `package.json` file:
-
-```json
- "displayName": "Mohole frontend starter kit",
-```
-
-to change the port to expose the project and the folder to build to just update the related constants in the `webpack.config.js` file:
-
-```javascript
-const dist = './dist';
-const port = 8080;
-```
-
 ## License
-Released under the [MIT license](LICENSE).
+The Mohole logo and brand is property of [Mohole S.r.L.](https://scuola.mohole.it/), this project code is released under the [MIT license](LICENSE).

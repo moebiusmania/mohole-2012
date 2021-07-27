@@ -1,0 +1,115 @@
+/* Desktop 1280 in su
+   ========================================================================== */
+@media (min-width: 1200px) {
+  .contenitore {
+    width: 1140px;
+  }
+  .box.unquarto {
+    text-align: center;
+  }
+  .box.unquarto img {
+    left: 50%;
+    margin-left: -97px;
+  }
+}
+
+/* Tablet e Desktop
+     ========================================================================== */
+@media (min-width: 980px) {
+  header img {
+    top: 200px;
+  }
+  header .carica {
+    top: 320px;
+  }
+}
+
+/* Mobile in generale
+     ========================================================================== */
+@media (max-width: 979px) {
+  #servizi:hover .box {
+    opacity: 1 !important;
+  }
+  nav {
+    border: 0 !important;
+  }
+  nav a:hover {
+    background-color: #009eee !important;
+  }
+}
+
+/* Tablet
+     ========================================================================== */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contenitore {
+    width: 100%;
+  }
+  .box img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .box.unquarto {
+    width: 100% !important;
+    height: 100px !important;
+  }
+  .box.unquarto img {
+    top: 20px !important;
+  }
+}
+
+/* Smartphone portrait
+     ========================================================================== */
+@media (max-width: 800px) {
+  header img {
+    top: 100px;
+  }
+  header .carica {
+    top: 220px;
+  }
+  .contenitore {
+    padding-top: 60px;
+    width: 100%;
+  }
+  nav {
+    top: -60px !important;
+    left: 0;
+    width: 100%;
+    height: 30px;
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+  }
+  nav li a {
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.46);
+  }
+  .box img {
+    display: none;
+  }
+  .box.main,
+  .box.secondari,
+  .box.unquarto,
+  .box.mini {
+    width: 100% !important;
+    height: 100px !important;
+  }
+  #servizi h2,
+  #servizi h3,
+  #servizi h4 {
+    font-size: 36px;
+    top: 20px;
+  }
+  #servizi p {
+    bottom: 10px;
+    font-size: 15px;
+  }
+}

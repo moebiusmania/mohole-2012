@@ -3,11 +3,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const pkg = require('./package.json');
 
 // Project related settings
 const ENV = process.env.NODE_ENV || 'development';
-const dist = './dist';
+const dist = './assets';
 const port = 8080;
 const notifications = false;
 
@@ -18,8 +19,15 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     title: pkg.displayName,
-    template: './src/html/index.html'
-  })
+    template: './assets/index.html'
+  }),
+  new CopyPlugin({
+    patterns: [
+      { from: "assets", to: ".", globOptions: {
+        ignore: ["**/index.html"]
+      } },
+    ],
+  }),
 ];
 
 notifications ? plugins.push(
@@ -34,7 +42,7 @@ module.exports = {
   },
   mode: ENV,
   output: {
-    path: path.join(__dirname, dist),
+    path: path.join(__dirname, '/dist'),
     filename: 'bundle.js',
     chunkFilename: 'bundle.[chunk].js'
   },
