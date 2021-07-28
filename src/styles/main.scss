@@ -64,7 +64,7 @@ nav a {
   text-align: left;
   margin-bottom: 3px;
   padding: 4px 12px;
-  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 nav li:hover {
   cursor: pointer;
@@ -73,9 +73,10 @@ nav a:hover {
   color: white;
   background-color: #333;
 }
-#about {
+#about, #dove {
   &.aperto {
     height: 268px;
+    overflow-y: auto;
   }
 }
 .info {
@@ -140,7 +141,17 @@ footer {
   float: left;
   font-size: 20px;
   line-height: 30px;
-  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index:1;
+
+  &.zoom {
+    transform: scale(1.5);
+    z-index: 99;
+  }
+
+  &.out {
+    transform: scale(0) rotate(45deg);
+  }
 }
 .box:hover {
   cursor: pointer;
