@@ -45,3 +45,54 @@ $$('.box a').forEach((link, index) => {
     setTimeout(() => vai(link.getAttribute('href')) , ritardo + 300);
   });
 });
+
+
+
+/**
+ * 2012 version
+
+// Variabili globali
+var aperture = 400,
+	ritardo = 0,
+	aumento = 50,
+	destinazione;
+
+// Precaricamento pagina
+$(window).on("load",function(){
+	$("header img").animate({top:"0px"},200);
+	$("#servizi,nav,footer").fadeIn(500);
+	$("header .carica").hide();
+});
+
+// Accordion voci di menu
+$("nav a").on("click",function(e){
+	e.preventDefault();
+	var quale = $(this).attr("href");
+	$(".info").slideUp(aperture);
+	if($(quale).hasClass("aperto")){
+		$(quale).removeClass("aperto").slideUp(aperture);
+	}else{
+		$(quale).addClass("aperto").slideDown(aperture);
+	}
+
+});
+
+// Effetti al click su un riquadro
+$(".box a").on("click",function(e){
+	e.preventDefault();
+	var box = $(this).parent(".box");
+	var altri = $(box).siblings();
+	destinazione = $(this).attr("href");
+	altri.each(function(i){
+		$(this).delay(ritardo).transition({scale: 0,rotate:'45deg' });
+		ritardo += aumento;
+	});
+	$(box).transition({scale:1.6},(aumento * altri.legth,vai));
+});
+
+// Redirect al sito cliccato
+function vai(){
+	location.href = destinazione;
+}
+
+*/
