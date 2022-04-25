@@ -1,0 +1,100 @@
+/* Sfumature
+   ========================================================================== */
+.azzurro {
+  background: #009eee;
+  background: -webkit-linear-gradient(
+    top,
+    #009eee 0%,
+    #00a2ef 16%,
+    #00a1ef 45%,
+    #0096ed 78%,
+    #0088ea 100%
+  );
+}
+.grigio {
+  background: #f2f2f2;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f2f2f2),
+    color-stop(22%, #f0f0f0),
+    color-stop(47%, #e5e5e5),
+    color-stop(75%, #d0d0d0),
+    color-stop(100%, #b4b4b3)
+  );
+}
+.arancione {
+  background: #f39200;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f39200),
+    color-stop(21%, #f49700),
+    color-stop(47%, #f39500),
+    color-stop(78%, #f28900),
+    color-stop(100%, #f07a00)
+  );
+}
+.verde {
+  background: #95c11e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #95c11e),
+    color-stop(26%, #9ac41f),
+    color-stop(46%, #98c31f),
+    color-stop(82%, #8abb1b),
+    color-stop(100%, #7db317)
+  );
+}
+.rosso {
+  background: #e94d4d;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #e94d4d),
+    color-stop(14%, #ea5050),
+    color-stop(47%, #ea4f4f),
+    color-stop(77%, #e74747),
+    color-stop(100%, #e43b3b)
+  );
+}
+.marrone {
+  background: #7d4e24;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #7d4e24),
+    color-stop(26%, #835125),
+    color-stop(47%, #805025),
+    color-stop(77%, #734821),
+    color-stop(100%, #613c1b)
+  );
+}
+
+/*
+  .viola {
+    background: #662d91;
+    background: -moz-linear-gradient(top, #662d91 0%, #6b2f96 29%, #682e93 51%, #5f2a89 75%, #4f2378 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #662d91),
+      color-stop(29%, #6b2f96),
+      color-stop(51%, #682e93),
+      color-stop(75%, #5f2a89),
+      color-stop(100%, #4f2378)
+    );
+    background: -webkit-linear-gradient(top, #662d91 0%, #6b2f96 29%, #682e93 51%, #5f2a89 75%, #4f2378 100%);
+    background: -o-linear-gradient(top, #662d91 0%, #6b2f96 29%, #682e93 51%, #5f2a89 75%, #4f2378 100%);
+    background: -ms-linear-gradient(top, #662d91 0%, #6b2f96 29%, #682e93 51%, #5f2a89 75%, #4f2378 100%);
+    background: linear-gradient(top, #662d91 0%, #6b2f96 29%, #682e93 51%, #5f2a89 75%, #4f2378 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#662d91', endColorstr='#4f2378',GradientType=0 );
+  }
+  */

@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Mohole UI
+   ========================================================================== */
+
+/* Tipografia
+   ========================================================================== */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans;
+  font-weight: 300;
+  color: #333;
+}
+p {
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+a {
+  color: #0077b3;
+}
+a:hover {
+  color: #009eee;
+  text-decoration: none;
+}
+li {
+  list-style: square inside;
+  margin: 7px 3px;
+}
+
+/* Layout
+       ========================================================================== */
+.contenitore {
+  margin: 0 auto;
+  width: 960px;
+  padding: 20px 0;
+}
