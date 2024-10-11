@@ -34,17 +34,16 @@ install dependencies
 
 ```bash
 cd mohole-2012
-npm install
-# or "npm i" as shortcut...
+npm ci
 ```
 
 and get started:
 
 ```bash
-npm start
+npm run dev
 ```
 
-This will start a `webpack-dev-server` instance in `hot-reload` mode (_this will automatically update your browser when you apply any changes to the source files_), your project will be exposed at `localhost:8080`.
+This will start the `vite` dev server instance in `hot-reload` mode (_this will automatically update your browser when you apply any changes to the source files_), your project will be exposed at `localhost:3000`.
 
 To create the optimized files to publish to whaterver static hosting you choose, just run:
 
