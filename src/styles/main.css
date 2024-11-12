@@ -1,3 +1,5 @@
+/* Original version was a SCSS file and it was a WordPress theme. */
+
 /*
 Theme Name: Mohole Hub
 Description: Il portale dei servizi Mohole
@@ -13,10 +15,10 @@ Mohole Hub is distributed under the terms of the GNU GPL
 
 /* Importazioni
    ========================================================================== */
-@import url("./reset.min.scss");
-@import url("./base.scss");
-@import url("./sfumature.scss");
-@import url("./responsive.scss");
+@import url("./reset.min.css");
+@import url("./base.css");
+@import url("./sfumature.css");
+@import url("./responsive.css");
 
 /* Stili generali sito
          ========================================================================== */

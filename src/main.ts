@@ -1,4 +1,4 @@
-import "./styles/main.scss";
+import "./styles/main.css";
 
 // Utilities
 const $ = (selettore: string): HTMLElement =>
